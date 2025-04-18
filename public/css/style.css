@@ -1,0 +1,203 @@
+body {
+    background-color: #f5f0e6;
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+}
+
+nav {
+    background-color: #2d3748;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+nav .logo a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 20px;
+}
+
+nav .auth a,
+nav .auth button {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+nav .auth button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+nav .auth a:hover,
+nav .auth button:hover {
+    color: #edf2f7;
+}
+
+.menu-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fffdf6;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead th {
+    background-color: #f8f1e8;
+    text-align: left;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #ddd;
+}
+
+tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+    font-size: 15px;
+}
+
+.edit-button,
+.delete-button,
+.back-button,
+.new-product-button,
+.save-button,
+.update-button {
+    display: inline-block;
+    padding: 6px 10px;
+    margin: 4px 4px 0 0;
+    font-size: 0.9rem;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button {
+    background-color: blue;
+    color: white;
+}
+
+.delete-button,
+.back-button {
+    background-color: red;
+    color: white;
+}
+
+.new-product-button,
+.save-button,
+.update-button {
+    background-color: green;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #0033aa;
+}
+
+.delete-button:hover,
+.back-button:hover {
+    background-color: #aa0000;
+}
+
+.new-product-button:hover,
+.save-button:hover,
+.update-button:hover {
+    background-color: #218838;
+}
+
+.form-create,
+.form-edit {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-create label,
+.form-edit label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-create input,
+.form-edit input,
+.form-create textarea,
+.form-edit textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.form-create textarea,
+.form-edit textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.form-error {
+    color: red;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+@media (max-width: 1024px) {
+    .menu-container {
+        padding: 15px;
+    }
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        font-size: 0.95rem;
+    }
+}
